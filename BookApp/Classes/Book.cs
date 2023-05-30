@@ -1,4 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
+using System.Data;
 
 namespace BookApp.Classes
 {
@@ -45,6 +46,24 @@ namespace BookApp.Classes
                 }
             }
             return bookList;
+        }
+
+        public void CreateBook(Book book)
+        {
+            SqlConnection con = new SqlConnection(connectionString);
+
+            SqlCommand cmd = new SqlCommand("CreateBook", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.Add(new SqlParameter("@Title", book.Title));
+            cmd.Parameters.Add(new SqlParameter("@Isbn", book.Isbn));
+            cmd.Parameters.Add(new SqlParameter("@PublisherName", book.PublisherName));
+            cmd.Parameters.Add(new SqlParameter("@AuthorName", book.AuthorName));
+            cmd.Parameters.Add(new SqlParameter("@CategoryName", book.CategoryName));
+
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
         }
     }
 }

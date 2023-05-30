@@ -28,135 +28,136 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            button1 = new Button();
-            button2 = new Button();
+            textTitle = new TextBox();
+            textISBN = new TextBox();
+            textPublisher = new TextBox();
+            textAuthor = new TextBox();
+            textCategory = new TextBox();
+            labelTitle = new Label();
+            labelISBN = new Label();
+            labelPublisher = new Label();
+            labelAuthor = new Label();
+            labelCategory = new Label();
+            btnOK = new Button();
+            btnCancel = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // textTitle
             // 
-            textBox1.Location = new Point(33, 42);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(326, 23);
-            textBox1.TabIndex = 0;
+            textTitle.Location = new Point(33, 42);
+            textTitle.Name = "textTitle";
+            textTitle.Size = new Size(326, 23);
+            textTitle.TabIndex = 0;
             // 
-            // textBox2
+            // textISBN
             // 
-            textBox2.Location = new Point(33, 108);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(326, 23);
-            textBox2.TabIndex = 1;
+            textISBN.Location = new Point(33, 108);
+            textISBN.Name = "textISBN";
+            textISBN.Size = new Size(326, 23);
+            textISBN.TabIndex = 1;
             // 
-            // textBox3
+            // textPublisher
             // 
-            textBox3.Location = new Point(33, 169);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(326, 23);
-            textBox3.TabIndex = 2;
+            textPublisher.Location = new Point(33, 169);
+            textPublisher.Name = "textPublisher";
+            textPublisher.Size = new Size(326, 23);
+            textPublisher.TabIndex = 2;
             // 
-            // textBox4
+            // textAuthor
             // 
-            textBox4.Location = new Point(33, 230);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(326, 23);
-            textBox4.TabIndex = 3;
+            textAuthor.Location = new Point(33, 230);
+            textAuthor.Name = "textAuthor";
+            textAuthor.Size = new Size(326, 23);
+            textAuthor.TabIndex = 3;
             // 
-            // textBox5
+            // textCategory
             // 
-            textBox5.Location = new Point(33, 294);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(326, 23);
-            textBox5.TabIndex = 4;
+            textCategory.Location = new Point(33, 294);
+            textCategory.Name = "textCategory";
+            textCategory.Size = new Size(326, 23);
+            textCategory.TabIndex = 4;
             // 
-            // label1
+            // labelTitle
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(33, 24);
-            label1.Name = "label1";
-            label1.Size = new Size(32, 15);
-            label1.TabIndex = 5;
-            label1.Text = "Title:";
+            labelTitle.AutoSize = true;
+            labelTitle.Location = new Point(33, 24);
+            labelTitle.Name = "labelTitle";
+            labelTitle.Size = new Size(32, 15);
+            labelTitle.TabIndex = 5;
+            labelTitle.Text = "Title:";
             // 
-            // label2
+            // labelISBN
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(33, 90);
-            label2.Name = "label2";
-            label2.Size = new Size(35, 15);
-            label2.TabIndex = 6;
-            label2.Text = "ISBN:";
+            labelISBN.AutoSize = true;
+            labelISBN.Location = new Point(33, 90);
+            labelISBN.Name = "labelISBN";
+            labelISBN.Size = new Size(35, 15);
+            labelISBN.TabIndex = 6;
+            labelISBN.Text = "ISBN:";
             // 
-            // label3
+            // labelPublisher
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(33, 151);
-            label3.Name = "label3";
-            label3.Size = new Size(59, 15);
-            label3.TabIndex = 7;
-            label3.Text = "Publisher:";
+            labelPublisher.AutoSize = true;
+            labelPublisher.Location = new Point(33, 151);
+            labelPublisher.Name = "labelPublisher";
+            labelPublisher.Size = new Size(59, 15);
+            labelPublisher.TabIndex = 7;
+            labelPublisher.Text = "Publisher:";
             // 
-            // label4
+            // labelAuthor
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(33, 212);
-            label4.Name = "label4";
-            label4.Size = new Size(47, 15);
-            label4.TabIndex = 8;
-            label4.Text = "Author:";
+            labelAuthor.AutoSize = true;
+            labelAuthor.Location = new Point(33, 212);
+            labelAuthor.Name = "labelAuthor";
+            labelAuthor.Size = new Size(47, 15);
+            labelAuthor.TabIndex = 8;
+            labelAuthor.Text = "Author:";
             // 
-            // label5
+            // labelCategory
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(33, 276);
-            label5.Name = "label5";
-            label5.Size = new Size(58, 15);
-            label5.TabIndex = 9;
-            label5.Text = "Category:";
+            labelCategory.AutoSize = true;
+            labelCategory.Location = new Point(33, 276);
+            labelCategory.Name = "labelCategory";
+            labelCategory.Size = new Size(58, 15);
+            labelCategory.TabIndex = 9;
+            labelCategory.Text = "Category:";
             // 
-            // button1
+            // btnOK
             // 
-            button1.Location = new Point(191, 341);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 10;
-            button1.Text = "OK";
-            button1.UseVisualStyleBackColor = true;
+            btnOK.Location = new Point(191, 341);
+            btnOK.Name = "btnOK";
+            btnOK.Size = new Size(75, 23);
+            btnOK.TabIndex = 10;
+            btnOK.Text = "OK";
+            btnOK.UseVisualStyleBackColor = true;
+            btnOK.Click += btnOK_Click;
             // 
-            // button2
+            // btnCancel
             // 
-            button2.Location = new Point(284, 341);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 11;
-            button2.Text = "Cancel";
-            button2.UseVisualStyleBackColor = true;
+            btnCancel.Location = new Point(284, 341);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(75, 23);
+            btnCancel.TabIndex = 11;
+            btnCancel.Text = "Cancel";
+            btnCancel.UseVisualStyleBackColor = true;
             // 
             // NewBookForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(401, 388);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(btnCancel);
+            Controls.Add(btnOK);
+            Controls.Add(labelCategory);
+            Controls.Add(labelAuthor);
+            Controls.Add(labelPublisher);
+            Controls.Add(labelISBN);
+            Controls.Add(labelTitle);
+            Controls.Add(textCategory);
+            Controls.Add(textAuthor);
+            Controls.Add(textPublisher);
+            Controls.Add(textISBN);
+            Controls.Add(textTitle);
             Name = "NewBookForm";
             Text = "New Book";
             ResumeLayout(false);
@@ -165,17 +166,17 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Button button1;
-        private Button button2;
+        private TextBox textTitle;
+        private TextBox textISBN;
+        private TextBox textPublisher;
+        private TextBox textAuthor;
+        private TextBox textCategory;
+        private Label labelTitle;
+        private Label labelISBN;
+        private Label labelPublisher;
+        private Label labelAuthor;
+        private Label labelCategory;
+        private Button btnOK;
+        private Button btnCancel;
     }
 }

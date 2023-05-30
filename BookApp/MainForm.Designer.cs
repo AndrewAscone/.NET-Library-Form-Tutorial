@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             dataGridView1 = new DataGridView();
+            btnNewForm = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -41,14 +42,25 @@
             dataGridView1.Size = new Size(728, 324);
             dataGridView1.TabIndex = 0;
             // 
-            // Form1
+            // btnNewForm
+            // 
+            btnNewForm.Location = new Point(685, 375);
+            btnNewForm.Name = "btnNewForm";
+            btnNewForm.Size = new Size(75, 23);
+            btnNewForm.TabIndex = 1;
+            btnNewForm.Text = "New";
+            btnNewForm.UseVisualStyleBackColor = true;
+            btnNewForm.Click += btnNewForm_Click_1;
+            // 
+            // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnNewForm);
             Controls.Add(dataGridView1);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "MainForm";
+            Text = "Library System";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
@@ -56,5 +68,6 @@
         #endregion
 
         private DataGridView dataGridView1;
+        private Button btnNewForm;
     }
 }

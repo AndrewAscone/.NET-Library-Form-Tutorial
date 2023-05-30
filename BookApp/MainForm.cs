@@ -20,9 +20,10 @@ namespace BookApp
             dataGridView1.DataSource = bookList;
         }
 
-        private void btnNewForm_Click(object sender, EventArgs e)
+        private void btnNewForm_Click_1(object sender, EventArgs e)
         {
-
+            NewBookForm formNewBook = new NewBookForm();
+            formNewBook.ShowDialog();
         }
     }
 }
