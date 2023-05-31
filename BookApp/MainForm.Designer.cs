@@ -31,6 +31,7 @@
             dataGridView1 = new DataGridView();
             btnNewForm = new Button();
             btnOpenEditForm = new Button();
+            btnBookDelete = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -45,7 +46,7 @@
             // 
             // btnNewForm
             // 
-            btnNewForm.Location = new Point(593, 376);
+            btnNewForm.Location = new Point(503, 378);
             btnNewForm.Name = "btnNewForm";
             btnNewForm.Size = new Size(75, 23);
             btnNewForm.TabIndex = 1;
@@ -55,7 +56,7 @@
             // 
             // btnOpenEditForm
             // 
-            btnOpenEditForm.Location = new Point(685, 376);
+            btnOpenEditForm.Location = new Point(595, 378);
             btnOpenEditForm.Name = "btnOpenEditForm";
             btnOpenEditForm.Size = new Size(75, 23);
             btnOpenEditForm.TabIndex = 2;
@@ -63,11 +64,22 @@
             btnOpenEditForm.UseVisualStyleBackColor = true;
             btnOpenEditForm.Click += btnOpenEditForm_Click;
             // 
+            // btnBookDelete
+            // 
+            btnBookDelete.Location = new Point(685, 378);
+            btnBookDelete.Name = "btnBookDelete";
+            btnBookDelete.Size = new Size(75, 23);
+            btnBookDelete.TabIndex = 3;
+            btnBookDelete.Text = "Delete";
+            btnBookDelete.UseVisualStyleBackColor = true;
+            btnBookDelete.Click += btnBookDelete_Click;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnBookDelete);
             Controls.Add(btnOpenEditForm);
             Controls.Add(btnNewForm);
             Controls.Add(dataGridView1);
@@ -83,5 +95,6 @@
         private DataGridView dataGridView1;
         private Button btnNewForm;
         private Button btnOpenEditForm;
+        private Button btnBookDelete;
     }
 }

@@ -112,5 +112,19 @@ namespace BookApp.Classes
             cmd.ExecuteNonQuery();
             con.Close();
         }
+
+        public void DeleteBook(int bookId)
+        {
+            SqlConnection con = new SqlConnection(connectionString);
+
+            SqlCommand cmd = new SqlCommand("DeleteBook", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.Add(new SqlParameter("@BookId", bookId));
+
+            con.Open() ;
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
     }
 }

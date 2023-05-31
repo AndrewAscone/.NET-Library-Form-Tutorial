@@ -45,5 +45,21 @@ namespace BookApp
             EditBookForm formEditBook = new EditBookForm(bookId);
             formEditBook.ShowDialog();
         }
+
+        private void btnBookDelete_Click(object sender, EventArgs e)
+        {
+            DeleteBook();
+        }
+
+        void DeleteBook()
+        {
+            int bookId;
+
+            bookId = (int)dataGridView1.CurrentRow.Cells[0].Value;
+
+            Book book = new Book();
+            book.DeleteBook(bookId);
+            FillGridView();
+        }
     }
 }
