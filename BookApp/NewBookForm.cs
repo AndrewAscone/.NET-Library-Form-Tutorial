@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BookApp.Classes;
 
 namespace BookApp
 {
@@ -19,7 +20,21 @@ namespace BookApp
 
         private void btnOK_Click(object sender, EventArgs e)
         {
+            SaveBookData();
+            this.Close();
+        }
 
+        void SaveBookData()
+        {
+            Book book = new Book();
+
+            book.Title = textTitle.Text;
+            book.Isbn = textISBN.Text;
+            book.PublisherName = textPublisher.Text;
+            book.AuthorName = textAuthor.Text;
+            book.CategoryName = textCategory.Text;
+
+            book.CreateBook(book);
         }
     }
 }
