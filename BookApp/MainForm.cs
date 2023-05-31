@@ -25,5 +25,10 @@ namespace BookApp
             NewBookForm formNewBook = new NewBookForm();
             formNewBook.ShowDialog();
         }
+
+        private void MainForm_Activated(object sender, EventArgs e)
+        {
+            FillGridView();
+        }
     }
 }

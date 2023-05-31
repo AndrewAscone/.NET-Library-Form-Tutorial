@@ -61,6 +61,7 @@
             Controls.Add(dataGridView1);
             Name = "MainForm";
             Text = "Library System";
+            Activated += MainForm_Activated;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
