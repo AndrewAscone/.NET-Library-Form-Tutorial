@@ -57,9 +57,17 @@ namespace BookApp
 
             bookId = (int)dataGridView1.CurrentRow.Cells[0].Value;
 
-            Book book = new Book();
-            book.DeleteBook(bookId);
-            FillGridView();
+            string? bookTitle = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+
+            string message = "Are you sure you want to delete '" + bookTitle + "' ?";
+            DialogResult dr = MessageBox.Show(message, "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (dr == DialogResult.Yes)
+            {
+                Book book = new Book();
+                book.DeleteBook(bookId);
+                FillGridView();
+            }
         }
     }
 }

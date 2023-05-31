@@ -83,6 +83,7 @@
             Controls.Add(btnOpenEditForm);
             Controls.Add(btnNewForm);
             Controls.Add(dataGridView1);
+            MaximizeBox = false;
             Name = "MainForm";
             Text = "Library System";
             Activated += MainForm_Activated;

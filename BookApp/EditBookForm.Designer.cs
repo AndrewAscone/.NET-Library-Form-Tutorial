@@ -145,6 +145,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            CancelButton = btnCancel;
             ClientSize = new Size(400, 389);
             Controls.Add(btnCancel);
             Controls.Add(btnOK);
@@ -158,8 +159,9 @@
             Controls.Add(textPublisher);
             Controls.Add(textISBN);
             Controls.Add(textTitle);
+            MaximizeBox = false;
             Name = "EditBookForm";
-            Text = "EditBookForm";
+            Text = "Edit Book";
             ResumeLayout(false);
             PerformLayout();
         }
