@@ -47,35 +47,35 @@
             textTitle.Location = new Point(33, 42);
             textTitle.Name = "textTitle";
             textTitle.Size = new Size(326, 23);
-            textTitle.TabIndex = 0;
+            textTitle.TabIndex = 1;
             // 
             // textISBN
             // 
             textISBN.Location = new Point(33, 108);
             textISBN.Name = "textISBN";
             textISBN.Size = new Size(326, 23);
-            textISBN.TabIndex = 1;
+            textISBN.TabIndex = 2;
             // 
             // textPublisher
             // 
             textPublisher.Location = new Point(33, 169);
             textPublisher.Name = "textPublisher";
             textPublisher.Size = new Size(326, 23);
-            textPublisher.TabIndex = 2;
+            textPublisher.TabIndex = 3;
             // 
             // textAuthor
             // 
             textAuthor.Location = new Point(33, 230);
             textAuthor.Name = "textAuthor";
             textAuthor.Size = new Size(326, 23);
-            textAuthor.TabIndex = 3;
+            textAuthor.TabIndex = 4;
             // 
             // textCategory
             // 
             textCategory.Location = new Point(33, 294);
             textCategory.Name = "textCategory";
             textCategory.Size = new Size(326, 23);
-            textCategory.TabIndex = 4;
+            textCategory.TabIndex = 5;
             // 
             // labelTitle
             // 
@@ -127,7 +127,7 @@
             btnOK.Location = new Point(191, 341);
             btnOK.Name = "btnOK";
             btnOK.Size = new Size(75, 23);
-            btnOK.TabIndex = 10;
+            btnOK.TabIndex = 6;
             btnOK.Text = "OK";
             btnOK.UseVisualStyleBackColor = true;
             btnOK.Click += btnOK_Click;
@@ -137,7 +137,7 @@
             btnCancel.Location = new Point(284, 341);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(75, 23);
-            btnCancel.TabIndex = 11;
+            btnCancel.TabIndex = 7;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
             // 

@@ -47,7 +47,7 @@
             btnCancel.Location = new Point(285, 341);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(75, 23);
-            btnCancel.TabIndex = 23;
+            btnCancel.TabIndex = 7;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
             // 
@@ -56,7 +56,7 @@
             btnOK.Location = new Point(192, 341);
             btnOK.Name = "btnOK";
             btnOK.Size = new Size(75, 23);
-            btnOK.TabIndex = 22;
+            btnOK.TabIndex = 6;
             btnOK.Text = "OK";
             btnOK.UseVisualStyleBackColor = true;
             btnOK.Click += btnOK_Click;
@@ -111,35 +111,35 @@
             textCategory.Location = new Point(34, 294);
             textCategory.Name = "textCategory";
             textCategory.Size = new Size(326, 23);
-            textCategory.TabIndex = 16;
+            textCategory.TabIndex = 5;
             // 
             // textAuthor
             // 
             textAuthor.Location = new Point(34, 230);
             textAuthor.Name = "textAuthor";
             textAuthor.Size = new Size(326, 23);
-            textAuthor.TabIndex = 15;
+            textAuthor.TabIndex = 4;
             // 
             // textPublisher
             // 
             textPublisher.Location = new Point(34, 169);
             textPublisher.Name = "textPublisher";
             textPublisher.Size = new Size(326, 23);
-            textPublisher.TabIndex = 14;
+            textPublisher.TabIndex = 3;
             // 
             // textISBN
             // 
             textISBN.Location = new Point(34, 108);
             textISBN.Name = "textISBN";
             textISBN.Size = new Size(326, 23);
-            textISBN.TabIndex = 13;
+            textISBN.TabIndex = 2;
             // 
             // textTitle
             // 
             textTitle.Location = new Point(34, 42);
             textTitle.Name = "textTitle";
             textTitle.Size = new Size(326, 23);
-            textTitle.TabIndex = 12;
+            textTitle.TabIndex = 1;
             // 
             // EditBookForm
             // 
