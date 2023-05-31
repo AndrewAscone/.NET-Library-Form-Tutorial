@@ -39,5 +39,19 @@ namespace BookApp
             textCategory.Text = book.CategoryName;
 
         }
+
+        void EditBookData()
+        {
+            Book book = new Book();
+
+            book.BookId = selectedBookId;
+            book.Title = textTitle.Text;
+            book.Isbn = textISBN.Text;
+            book.PublisherName = textPublisher.Text;
+            book.AuthorName = textAuthor.Text;
+            book.CategoryName = textCategory.Text;
+
+            book.EditBook(book);
+        }
     }
 }

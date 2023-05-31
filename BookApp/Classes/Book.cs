@@ -93,5 +93,24 @@ namespace BookApp.Classes
             }
             return book;
         }
+
+        public void EditBook(Book book)
+        {
+            SqlConnection con = new SqlConnection(connectionString);
+
+            SqlCommand cmd = new SqlCommand("UpdateBook", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.Add(new SqlParameter("@BookId", book.BookId));
+            cmd.Parameters.Add(new SqlParameter("@Title", book.Title));
+            cmd.Parameters.Add(new SqlParameter("@Isbn", book.Isbn));
+            cmd.Parameters.Add(new SqlParameter("@PublisherName", book.PublisherName));
+            cmd.Parameters.Add(new SqlParameter("@AuthorName", book.AuthorName));
+            cmd.Parameters.Add(new SqlParameter("@CategoryName", book.CategoryName));
+
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
     }
 }
