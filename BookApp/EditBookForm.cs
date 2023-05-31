@@ -24,7 +24,8 @@ namespace BookApp
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-
+            EditBookData();
+            this.Close();
         }
 
         void GetBookData()
