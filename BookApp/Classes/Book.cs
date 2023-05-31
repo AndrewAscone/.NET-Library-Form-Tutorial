@@ -65,5 +65,33 @@ namespace BookApp.Classes
             cmd.ExecuteNonQuery();
             con.Close();
         }
+
+        public Book GetBookData(int BookId)
+        {
+            SqlConnection con = new SqlConnection(connectionString);
+
+            string selectSQL = "select BookId, Title, Isbn, PublisherName, AuthorName, CategoryName from GetBookData where BookId = " + BookId;
+            con.Open();
+
+            SqlCommand cmd = new SqlCommand(selectSQL, con);
+
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            Book book = new Book();
+
+            if (dr != null)
+            {
+                while(dr.Read())
+                {
+                    book.BookId = Convert.ToInt32(dr["BookId"]);
+                    book.Title = dr["Title"].ToString();
+                    book.Isbn = dr["ISBN"].ToString();
+                    book.PublisherName = dr["PublisherName"].ToString();
+                    book.AuthorName = dr["AuthorName"].ToString() ;
+                    book.CategoryName = dr["CategoryName"].ToString();
+                }
+            }
+            return book;
+        }
     }
 }

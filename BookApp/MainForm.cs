@@ -30,5 +30,20 @@ namespace BookApp
         {
             FillGridView();
         }
+
+        private void btnOpenEditForm_Click(object sender, EventArgs e)
+        {
+            EditBook();
+        }
+
+        void EditBook()
+        {
+            int bookId;
+
+            bookId = (int)dataGridView1.CurrentRow.Cells[0].Value;
+
+            EditBookForm formEditBook = new EditBookForm(bookId);
+            formEditBook.ShowDialog();
+        }
     }
 }
